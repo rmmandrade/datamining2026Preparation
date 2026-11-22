@@ -1,0 +1,25 @@
+Feature,Dimension,Role
+utilization_rate_last_period,Engagement,Core
+recency_ratio_log1p,Engagement,Core
+n_renewals_imputed,Engagement,Core
+addon_diversity_score,Service usage,Core
+meeting_room_hours_per_month_log1p,Service usage,Core
+event_space_hours_per_month_log1p,Service usage,Core
+guest_passes_per_month_log1p,Service usage,Core
+lifetime_value_per_month_asinh,Economic value,Core
+value_per_member_asinh,Economic value,Core
+days_since_last_visit_imputed,Engagement,Alternative
+total_visits_imputed,Engagement,Alternative
+avg_weekly_visits,Engagement,Alternative
+entitled_visits_last_period_imputed,Engagement,Alternative
+membership_months_imputed,Engagement,Alternative
+uses_print,Service usage,Alternative
+uses_mail_handling,Service usage,Alternative
+uses_phone_booths,Service usage,Alternative
+uses_day_passes,Service usage,Alternative
+uses_storage,Service usage,Alternative
+revenue_per_visit_asinh,Economic value,Alternative
+n_colleagues_on_account_imputed,Account characteristics,Alternative
+plan_tier_imputed,Account characteristics,Alternative
+industry,Account characteristics,Alternative
+is_active,Engagement,Profiling

@@ -1,0 +1,41 @@
+Feature,Decision,Reason
+age_imputed,Profiling only,Demographic characteristic
+gender_clean,Profiling only,Demographic characteristic
+industry,Retain for assessment,Potential clustering input
+country_clean,Profiling only,Geographic characteristic
+is_team_account,Exclude - redundant,Prefer number of colleagues for account structure
+n_colleagues_on_account_imputed,Retain for assessment,Potential clustering input
+plan_tier_imputed,Retain for assessment,Potential clustering input
+plan_days_per_week_imputed,Exclude - redundant,Already determined by membership plan
+days_since_last_visit_imputed,Retain for assessment,Potential clustering input
+total_visits_imputed,Retain for assessment,Potential clustering input
+avg_weekly_visits,Retain for assessment,Potential clustering input
+entitled_visits_last_period_imputed,Retain for assessment,Potential clustering input
+actual_visits_last_period,Exclude - redundant,Strong overlap with weekly visits and utilization
+meeting_room_hours_imputed,Exclude - redundant,Prefer monthly meeting-room usage
+event_space_hours_imputed,Exclude - redundant,Prefer monthly event-space usage
+guest_passes_issued_imputed,Exclude - redundant,Prefer monthly guest-pass usage
+uses_meeting_rooms,Exclude - redundant,Strong overlap with meeting-room usage intensity
+uses_event_space,Exclude - redundant,Strong overlap with event-space usage intensity
+uses_guest_passes,Exclude - redundant,Strong overlap with guest-pass usage intensity
+uses_print,Retain for assessment,Potential clustering input
+uses_mail_handling,Retain for assessment,Potential clustering input
+uses_phone_booths,Retain for assessment,Potential clustering input
+uses_day_passes,Retain for assessment,Potential clustering input
+uses_storage,Retain for assessment,Potential clustering input
+uses_bike_locker,Profiling only,Very rare service usage (approximately 0.17%)
+n_renewals_imputed,Retain for assessment,Potential clustering input
+lifetime_value_imputed,Exclude - redundant,Prefer tenure-normalized financial value
+membership_months_imputed,Retain for assessment,Potential clustering input
+is_active,Retain for assessment,Potential clustering input
+total_account_members,Exclude - redundant,Equivalent to colleagues on account + 1
+utilization_rate_last_period,Retain for assessment,Potential clustering input
+visit_intensity_gap,Exclude - redundant,Strong overlap with utilization rate
+recency_ratio_log1p,Retain for assessment,Potential clustering input
+addon_diversity_score,Retain for assessment,Potential clustering input
+meeting_room_hours_per_month_log1p,Retain for assessment,Potential clustering input
+event_space_hours_per_month_log1p,Retain for assessment,Potential clustering input
+guest_passes_per_month_log1p,Retain for assessment,Potential clustering input
+revenue_per_visit_asinh,Retain for assessment,Potential clustering input
+value_per_member_asinh,Retain for assessment,Potential clustering input
+lifetime_value_per_month_asinh,Retain for assessment,Potential clustering input
