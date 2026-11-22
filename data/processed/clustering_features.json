@@ -1,0 +1,53 @@
+{
+    "feature_sets": {
+        "engagement_core": [
+            "utilization_rate_last_period",
+            "recency_ratio_log1p",
+            "n_renewals_imputed"
+        ],
+        "engagement_frequency": [
+            "avg_weekly_visits",
+            "recency_ratio_log1p",
+            "n_renewals_imputed"
+        ],
+        "service_core": [
+            "addon_diversity_score",
+            "meeting_room_hours_per_month_log1p",
+            "event_space_hours_per_month_log1p",
+            "guest_passes_per_month_log1p"
+        ],
+        "service_preferences": [
+            "uses_print",
+            "uses_mail_handling",
+            "uses_phone_booths",
+            "uses_day_passes",
+            "uses_storage",
+            "meeting_room_hours_per_month_log1p",
+            "event_space_hours_per_month_log1p",
+            "guest_passes_per_month_log1p"
+        ],
+        "economic_core": [
+            "lifetime_value_per_month_asinh",
+            "value_per_member_asinh"
+        ],
+        "economic_account_size": [
+            "lifetime_value_per_month_asinh",
+            "value_per_member_asinh",
+            "n_colleagues_on_account_imputed"
+        ],
+        "economic_plan": [
+            "lifetime_value_per_month_asinh",
+            "value_per_member_asinh",
+            "plan_dedicated_desk",
+            "plan_flex",
+            "plan_full_time",
+            "plan_hot_desk",
+            "plan_private_office"
+        ]
+    },
+    "scaling": {
+        "continuous": "StandardScaler",
+        "binary": "Unscaled (0/1)",
+        "plan_one_hot": "Weighted by 1/sqrt(2)"
+    }
+}
